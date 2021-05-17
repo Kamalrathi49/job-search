@@ -65,10 +65,10 @@ const App = () => {
         .map((job) => {
           return <Job key={job.id} job={job} />
         })}
-        <JobsPagination
+        <JobsPagination className="pages"
           page={page}
           setPage={setPage}
-          hasNextPage={hasNextPage}
+          hasNextPage={hasNextPage }
         />
       </Container>
     </>
