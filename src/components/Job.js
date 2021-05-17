@@ -10,8 +10,8 @@ const Job = ({ job }) => {
       <Card.Body>
         <div className="d-flex justify-content-between">
           <div>
-            <Card.Title>
-              {job.title} - <span className="text-muted font-weight-light">{job.company}</span>
+            <Card.Title style={{color:'blue'}}>
+              {job.title} - <span className="text-muted font-weight-light"  >{job.company}</span>
             </Card.Title>
             <Card.Subtitle className="text-muted mb-2">
               {new Date(job.created_at).toLocaleDateString()}

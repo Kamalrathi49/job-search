@@ -1,4 +1,3 @@
-import React from "react";
 
 import { useReducer, useEffect } from "react";
 import axios from "axios";
@@ -10,7 +9,9 @@ const ACTIONS = {
   UPDATE_HAS_NEXT_PAGE: "update-has-next-page",
 };
 
-const BASE_URL = "https://jobs.github.com/positions.json?description=ruby&page=1";
+
+
+const BASE_URL = ("https://jobs.github.com/positions.json?description=ruby&page=1");
 
 
 const reducer = (state, action) => {
