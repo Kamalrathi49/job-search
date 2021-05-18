@@ -1,0 +1,16 @@
+.type,.url {
+    text-decoration: none;
+    color: black;
+    font-size: medium;
+}
+
+
+
+#url {
+    color: blue;
+    font-size: medium;
+}
+
+.details {
+    color: black;
+}
