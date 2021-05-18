@@ -28,6 +28,7 @@ h5 {
 
 :root {
   --dark: #121212;
+  opacity: 95%;
   --white: rgb(236, 236, 236);
 }
 
