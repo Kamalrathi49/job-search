@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Card, Badge, Button, Collapse } from "react-bootstrap";
 import "./jobs.style.css";
+
 const Job = ({ job }) => {
   const [open, setOpen] = useState(false);
 
@@ -44,11 +45,26 @@ const Job = ({ job }) => {
         <Collapse in={open}>
           <div className="mt-4 details">
             <p>location: {job.location}</p>
-            <p className="url" >Visit us at : <h3 id="url">{job.company_url}</h3></p>
-            <p> Discription: <br/> {job.description}</p>
-            <p>How to apply: <br/>{job.how_to_apply}</p>
-            <p className="url">Job link:  <h3 id="url">{job.url}</h3></p>
-
+            <p className="url">
+              Visit us at :{" "}
+              <a href={job.company_url} id="url">
+                {job.company_url}
+              </a>
+            </p>
+            <p>
+              {" "}
+              Discription: <br /> {job.description}
+            </p>
+            <p>
+              How to apply: <br />
+              {job.how_to_apply}
+            </p>
+            <p className="url">
+              Job link:{" "}
+              <a href={job.url} id="url">
+                {job.url}
+              </a>
+            </p>
           </div>
         </Collapse>
       </Card.Body>
