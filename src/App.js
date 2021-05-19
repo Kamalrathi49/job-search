@@ -29,7 +29,7 @@ const App = () => {
       <Container className="my-4">
         <div className="header">
           <h1 className="mb-4"><img src={logo} alt="logo" style={{marginRight:"6px", marginBottom:"4px"}}/>Github Jobs</h1>
-          {/* <DarkMode /> */}
+          <DarkMode />
         </div>
         <SearchForm params={params} onParamChange={handleParamChange} />
         <JobsPagination
