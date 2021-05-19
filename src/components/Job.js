@@ -44,8 +44,8 @@ const Job = ({ job }) => {
         <Collapse in={open}>
           <div className="mt-4 details">
             <p>location: {job.location}</p>
-            <p>Visit us at : {job.company_url}</p>
-            <p>{job.description}</p>
+            <p className="url" >Visit us at : <h3 id="url">{job.company_url}</h3></p>
+            <p> Discription: <br/> {job.description}</p>
             <p>How to apply: <br/>{job.how_to_apply}</p>
             <p className="url">Job link:  <h3 id="url">{job.url}</h3></p>
 
