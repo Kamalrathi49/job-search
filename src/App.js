@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Container, Spinner, Button } from "react-bootstrap";
 
-import  logo from './assests/github-logo.png'
+import logo  from "./assests/github-logo.png";
 
 import "./App.css";
 import DarkMode from "./components/dark-mode/DarkMode.component.jsx";
@@ -28,7 +28,10 @@ const App = () => {
     <>
       <Container className="my-4">
         <div className="header">
-          <h1 className="mb-4"><img src={logo} alt="logo" style={{marginRight:"6px", marginBottom:"4px"}}/>Github Jobs</h1>
+          <h1 className="mb-4">
+            <img src={logo} alt="logo" style={{ marginRight: "6px", marginBottom: "4px" }} />
+            Github Jobs
+          </h1>
           <DarkMode />
         </div>
         <SearchForm params={params} onParamChange={handleParamChange} />
